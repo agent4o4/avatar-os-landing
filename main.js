@@ -6,7 +6,7 @@ function injectSuccess(card) {
     <div class="success-message">
       <div class="success-icon">◈</div>
       <p class="success-title">// signal.received</p>
-      <p class="success-body">You're in. Early access incoming.</p>
+      <p class="success-body">You're in. Keep an eye on your inbox.</p>
     </div>`);
 }
 
