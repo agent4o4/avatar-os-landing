@@ -325,6 +325,66 @@ body {
   text-align: center;
 }
 
+/* ── About section ── */
+.about-section {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: rgba(13, 11, 30, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 3.5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 680px;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--white-dim);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-sig {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 20, 119, 0.2);
+  width: 100%;
+}
+
+.about-sig-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--pink);
+  opacity: 0.8;
+}
+
+.about-sig-name {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--pink);
+  opacity: 0.85;
+}
+
+/* ── Repeat form wrapper ── */
+.repeat-form {
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
 /* ── Footer ── */
 .site-footer {
   padding: 1.5rem 3rem;

@@ -10,14 +10,18 @@ const successHtml = `
   </div>`;
 card.insertAdjacentHTML('beforeend', successHtml);
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const name  = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
+function handleSubmit(formEl) {
+  const card = formEl.closest('.signup-card');
+  const name  = formEl.querySelector('[name="name"]').value.trim();
+  const email = formEl.querySelector('[name="email"]').value.trim();
   if (!name || !email) return;
-
-  // Replace with real API call / form service when ready
   console.log('Signup:', { name, email });
-
   card.classList.add('success');
-});
+}
+
+form.addEventListener('submit', (e) => { e.preventDefault(); handleSubmit(form); });
+
+const form2 = document.getElementById('signupForm2');
+const card2 = form2.closest('.signup-card');
+card2.insertAdjacentHTML('beforeend', successHtml);
+form2.addEventListener('submit', (e) => { e.preventDefault(); handleSubmit(form2); });
